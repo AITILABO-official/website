@@ -1,2 +1,5 @@
+[Account Reset]
 cmdkey /delete:git:https://github.com
-& "C:\Program Files\Git\cmd\git.exe" pull
+
+[Pull Command]
+"C:\Program Files\Git\cmd\git.exe" pull
