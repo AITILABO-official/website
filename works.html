@@ -72,7 +72,35 @@
             font-size: 13px;
         }
 
+        .work-card {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .work-image img {
+            width: 100%;
+            border-radius: 14px;
+            border: 1px solid #d9e2ec;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .button {
+            display: inline-block;
+            background: #0f2742;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 999px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+
         @media (max-width: 800px) {
+            .work-card {
+                grid-template-columns: 1fr;
+            }
 
             .hero-inner,
             .case-grid,
@@ -134,24 +162,26 @@
             アイティラボがこれまでに対応してきた開発事例を紹介します。
         </p>
 
-        <div class="card">
-            <h2>サポート終了したダーツマシンの再生</h2>
+        <div class="card work-card">
+            <div class="work-image">
+                <img src="images/darts-board.jpg" alt="ダーツマシン向け制御基板">
+            </div>
 
-            <p>
-                メーカーサポート終了により補修部品が入手できなくなった業務用ダーツマシンに対し、
-                制御システムを独自開発基板へ置き換え、既存筐体を活かした再生を実現しました。
-            </p>
+            <div class="work-content">
+                <h2>サポート終了したダーツマシンの再生</h2>
 
-            <p>
-                Raspberry Pi Compute Module 4を採用した専用制御基板を開発し、
-                回路設計からソフトウェア開発、製造・検査まで一貫して対応しました。
-            </p>
+                <p>
+                    メーカーサポート終了により補修部品が入手できなくなった業務用ダーツマシンに対し、
+                    制御システムを独自開発基板へ置き換え、既存筐体を活かした再生を実現しました。
+                </p>
 
-            <p>
-                <a href="works-darts.html">
-                    詳細を見る →
-                </a>
-            </p>
+                <p>
+                    Raspberry Pi Compute Module 4を採用した専用制御基板を開発し、
+                    回路設計からソフトウェア開発、製造・検査まで一貫して対応しました。
+                </p>
+
+                <a class="button" href="works-darts.html">詳細を見る →</a>
+            </div>
         </div>
 
         <div class="card">
