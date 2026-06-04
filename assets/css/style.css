@@ -305,6 +305,24 @@ h2 {
     font-size: 13px;
 }
 
+.logo {
+    text-decoration: none;
+}
+
+.logo-main {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0f2742;
+    line-height: 1;
+}
+
+.logo-sub {
+    font-size: 11px;
+    color: #5f6b7a;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+}
+
 @media (max-width: 800px) {
 
     .hero-inner,
