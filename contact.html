@@ -51,20 +51,26 @@ h1 {
   background: #ffffff;
   border: 1px solid #d9e2ec;
   border-radius: 16px;
-  padding: 24px;
+  padding: 32px;
   margin-top: 32px;
 }
-.form-frame {
-  width: 100%;
-  height: 900px;
-  border: none;
+.form-area h2 {
+  margin-top: 0;
+  color: #0f2742;
 }
-.form-placeholder {
-  background: #f8fafc;
-  border: 1px dashed #b6c2cf;
-  border-radius: 12px;
-  padding: 32px;
+.contact-button {
+  display: inline-block;
+  margin-top: 16px;
+  background: #0f2742;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+.note {
+  margin-top: 24px;
   color: #5f6b7a;
+  font-size: 14px;
 }
 .footer {
   background: #0b1d30;
@@ -110,33 +116,28 @@ gtag('config', 'G-69NLYRLEGD');
   </p>
 
   <div class="form-area">
+    <h2>開発相談・お問い合わせフォーム</h2>
 
-    <!--
-      Googleフォームを埋め込む場合：
-      下の iframe の src に、Googleフォームの「送信」→「<> 埋め込みHTML」から取得したURLを貼り付けます。
+    <p>
+      図面、写真、仕様書などの参考資料がある場合は、フォームから添付できます。
+      既存機器の改修・延命、専用基板開発、組込みソフトウェア、Webシステム、スマホアプリ、クラウド連携など、幅広くご相談ください。
+    </p>
 
-      例：
-      src="https://docs.google.com/forms/d/e/xxxxxxxxxxxxxxxx/viewform?embedded=true"
-    -->
+    <p>
+      内容を確認後、通常2営業日以内にご連絡いたします。
+    </p>
 
-    <!-- GoogleフォームURLを入れたら、この iframe を有効化 -->
-    <!--
-    <iframe
-      class="form-frame"
-      src="ここにGoogleフォームの埋め込みURLを貼り付け"
-      loading="lazy">
-    </iframe>
-    -->
+    <a
+      class="contact-button"
+      href="https://forms.gle/nQAf1mtK7RLspYhS7"
+      target="_blank"
+      rel="noopener noreferrer">
+      Googleフォームを開く
+    </a>
 
-    <div class="form-placeholder">
-      <p>
-        お問い合わせフォームは現在準備中です。
-      </p>
-      <p>
-        Googleフォームの埋め込みURLを設定後、こちらにフォームが表示されます。
-      </p>
-    </div>
-
+    <p class="note">
+      ※ Googleフォームが別タブで開きます。資料添付を行う場合、Googleアカウントへのログインが必要になる場合があります。
+    </p>
   </div>
 </main>
 
