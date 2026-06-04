@@ -323,6 +323,37 @@ h2 {
     letter-spacing: 0.5px;
 }
 
+.footer {
+    background: #0b1d30;
+    color: #cbd5e1;
+    padding: 40px 24px;
+    text-align: center;
+}
+
+.footer-company {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.footer-links {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    margin: 0 12px;
+    color: #cbd5e1;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
 @media (max-width: 800px) {
 
     .hero-inner,
