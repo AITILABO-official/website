@@ -98,8 +98,32 @@
     }
 
     @media (max-width: 800px) {
+
+      .hero-inner,
+      .case-grid,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        gap: 10px;
+      }
+
       nav {
-        display: none;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav a {
+        margin-left: 0;
+        font-size: 14px;
       }
     }
   </style>
