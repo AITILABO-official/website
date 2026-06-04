@@ -305,13 +305,6 @@ h2 {
     font-size: 13px;
 }
 
-.form-area iframe {
-    width: 100%;
-    border: none;
-    border-radius: 12px;
-    margin-top: 20px;
-}
-
 @media (max-width: 800px) {
 
     .hero-inner,
