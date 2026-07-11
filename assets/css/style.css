@@ -86,8 +86,8 @@ a {
     opacity 0.2s ease;
 }
 
-.global-nav a:hover,
-.global-nav a[aria-current="page"] {
+.global-nav a:not(.nav-contact):hover,
+.global-nav a:not(.nav-contact)[aria-current="page"] {
   color: var(--accent);
 }
 
@@ -98,8 +98,14 @@ a {
   border-radius: 6px;
 }
 
-.global-nav .nav-contact:hover {
+.global-nav .nav-contact,
+.global-nav .nav-contact:hover,
+.global-nav .nav-contact[aria-current="page"],
+.global-nav .nav-contact:visited {
   color: #ffffff;
+}
+
+.global-nav .nav-contact:hover {
   opacity: 0.85;
 }
 
