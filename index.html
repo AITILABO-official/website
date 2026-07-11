@@ -4,8 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>合同会社アイティラボ | ハードウェアとソフトウェアで現場の課題を解決</title>
-  <meta name="description" content="アイティラボは、ハードウェア設計、組込みソフトウェア、PLC制御、AI活用、Webシステム、スマホアプリ、クラウド連携、製品化まで一貫対応する技術開発会社です。">
+
+  <title>合同会社アイティラボ | システム全体を見据えた設計・開発</title>
+
+  <meta
+    name="description"
+    content="合同会社アイティラボは、ハードウェア、組込みソフトウェア、PLC・設備制御、Web・クラウド、AIまでを一貫して設計・開発する技術開発会社です。仕様策定から製品化まで伴走します。"
+  >
 
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -13,175 +18,274 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-69NLYRLEGD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
     gtag('config', 'G-69NLYRLEGD');
   </script>
-
 </head>
 
 <body>
 
-  <header>
+  <header class="site-header">
     <div class="header-inner">
 
-      <a class="logo" href="index.html">
-        <div class="logo-main">アイティラボ</div>
-        <div class="logo-sub">ハードウェア・組込みシステム開発</div>
+      <a
+        class="site-logo"
+        href="index.html"
+        aria-label="合同会社アイティラボ トップページ"
+      >
+        <img
+          src="images/logo-header.png"
+          alt="IT LABO 合同会社アイティラボ"
+          width="1683"
+          height="487"
+        >
       </a>
 
-      <nav>
-        <a href="index.html">トップ</a>
+      <nav class="global-nav" aria-label="メインナビゲーション">
+        <a href="index.html" aria-current="page">トップ</a>
         <a href="works.html">実績紹介</a>
-        <a href="contact.html">お問い合わせ</a>
+        <a href="contact.html" class="nav-contact">お問い合わせ</a>
       </nav>
 
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <div>
-        <h1>現場の課題を、<br>ハードウェアとソフトウェアで解決します。</h1>
-        <p>
-          アイティラボは、ハードウェア設計、組込みソフトウェア、PLC制御、AI活用、Webシステム、スマホアプリ、クラウド連携、製品化まで一貫対応する技術開発会社です。
-        </p>
-        <a class="button" href="contact.html">開発について相談する</a>
-      </div>
+  <main>
 
-      <div class="hero-photo">
-        <!-- 推奨写真：自社設計基板、CM4搭載基板、検査中の基板など -->
-        <img src="images/main-board.jpg" alt="自社設計の制御基板">
-      </div>
-    </div>
-  </section>
+    <section class="hero">
+      <div class="hero-inner">
 
-  <section class="case">
-    <div class="section case-grid">
+        <div class="hero-content">
 
-      <div class="case-image">
-        <img src="images/darts-board.jpg" alt="ダーツマシン向け制御基板">
-      </div>
+          <p class="hero-kicker">
+            HARDWARE / EMBEDDED / CLOUD / AI
+          </p>
 
-      <div>
+          <h1>
+            システム全体を見据え、<br>
+            現場で本当に使える仕組みを設計します。
+          </h1>
 
-        <h2>代表実績：サポート終了したダーツマシンの再生</h2>
+          <p class="hero-description">
+            ハードウェア、組込みソフトウェア、PLC・設備制御、
+            Web・クラウド、AIまでを一貫して検討。
+            仕様が固まっていない段階から、課題整理、設計、開発、
+            製品化まで伴走します。
+          </p>
 
-        <p>
-          メーカーサポート終了により運用継続が困難となった業務用ダーツマシンに対し、
-          独自開発基板による制御系の置き換えを実施しました。
-        </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="contact.html"
+            >
+              開発について相談する
+            </a>
 
-        <div class="badges">
-          <span class="badge">約300店舗規模</span>
-          <span class="badge">組込みLinux</span>
-          <span class="badge">制御基板設計</span>
-          <span class="badge">オンラインアップデート</span>
-          <span class="badge">量産対応</span>
+            <a
+              class="button button-secondary"
+              href="works.html"
+            >
+              開発実績を見る
+            </a>
+          </div>
+
         </div>
 
-        <p>
-          <a class="button" href="works-darts.html">
-            詳細を見る →
-          </a>
-        </p>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section class="case">
-    <div class="section case-grid">
-
-      <div class="case-image">
-        <img src="images/bottle-system.jpg" alt="独自赤外線技術によるボトル管理システム">
-      </div>
-
-      <div>
-
-        <h2>代表実績：独自赤外線技術によるボトル管理システム</h2>
-
-        <p>
-          飲食店のキープボトル管理向けに、
-          独自開発した赤外線タグ技術を用いたボトル捜索システムを開発しました。
-        </p>
-
-        <div class="badges">
-          <span class="badge">独自赤外線タグ</span>
-          <span class="badge">無線通信基板設計</span>
-          <span class="badge">スマホアプリ</span>
-          <span class="badge">クラウド連携</span>
-          <span class="badge">量産対応</span>
+        <div class="hero-photo">
+          <img
+            src="images/main-board.jpg"
+            alt="アイティラボが設計した制御基板"
+          >
         </div>
 
-        <p>
-          <a class="button" href="works-bottle.html">
-            詳細を見る →
-          </a>
-        </p>
+      </div>
+    </section>
+
+    <section class="case">
+      <div class="section case-grid">
+
+        <div class="case-image">
+          <img
+            src="images/darts-board.jpg"
+            alt="ダーツマシン向け制御基板"
+          >
+        </div>
+
+        <div class="case-content">
+
+          <h2>
+            代表実績：サポート終了したダーツマシンの再生
+          </h2>
+
+          <p>
+            メーカーサポート終了により運用継続が困難となった
+            業務用ダーツマシンに対し、独自開発基板による
+            制御系の置き換えを実施しました。
+          </p>
+
+          <div class="badges">
+            <span class="badge">約300店舗規模</span>
+            <span class="badge">組込みLinux</span>
+            <span class="badge">制御基板設計</span>
+            <span class="badge">オンラインアップデート</span>
+            <span class="badge">量産対応</span>
+          </div>
+
+          <p>
+            <a
+              class="button button-secondary"
+              href="works-darts.html"
+            >
+              詳細を見る →
+            </a>
+          </p>
+
+        </div>
 
       </div>
+    </section>
 
-    </div>
-  </section>
+    <section class="case">
+      <div class="section case-grid">
 
-  <section class="section">
-    <h2>対応領域</h2>
+        <div class="case-image">
+          <img
+            src="images/bottle-system.jpg"
+            alt="独自赤外線技術によるボトル管理システム"
+          >
+        </div>
 
-    <div class="cards">
-      <div class="card">
-        <h3>ハードウェア開発</h3>
-        <p>回路設計、基板設計、センサー制御、モーター制御、無線通信機器開発。</p>
+        <div class="case-content">
+
+          <h2>
+            代表実績：独自赤外線技術によるボトル管理システム
+          </h2>
+
+          <p>
+            飲食店のキープボトル管理向けに、
+            独自開発した赤外線タグ技術を用いた
+            ボトル捜索システムを開発しました。
+          </p>
+
+          <div class="badges">
+            <span class="badge">独自赤外線タグ</span>
+            <span class="badge">無線通信基板設計</span>
+            <span class="badge">スマホアプリ</span>
+            <span class="badge">クラウド連携</span>
+            <span class="badge">量産対応</span>
+          </div>
+
+          <p>
+            <a
+              class="button button-secondary"
+              href="works-bottle.html"
+            >
+              詳細を見る →
+            </a>
+          </p>
+
+        </div>
+
       </div>
+    </section>
 
-      <div class="card">
-        <h3>組込みソフトウェア開発</h3>
-        <p>Raspberry Pi、ESP32、RP2040などを用いた機器制御、通信制御、表示制御。</p>
-      </div>
+    <section class="section">
 
-      <div class="card">
-        <h3>PLC・設備制御</h3>
-        <p>PLCラダー/STによる設備制御、既存設備の改修、センサー追加、I/O制御、外部機器との連携。</p>
-      </div>
+      <h2>対応領域</h2>
 
-      <div class="card">
-        <h3>AI活用・業務自動化</h3>
-        <p>
-          生成AI・画像認識・RAG（社内文書検索）などを活用した業務支援、
-          検査システム、自動応答、既存システムとのAI連携。
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Web・スマホ・クラウド</h3>
-        <p>管理画面、業務システム、スマホアプリ、API連携、遠隔監視、オンラインアップデート。</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>開発情報の発信</h2>
-    <p class="lead">
-      電子回路、組込みソフトウェア、AI活用、画像認識、RAG、Raspberry Pi、ESP32、RFID、IoT、製品開発など、
-      実際の開発で得た知見を順次公開していく予定です。
-    </p>
-    <!-- 将来的に blog/index.html へリンク -->
-  </section>
-
-  <section class="cta">
-    <div class="section">
-      <h2>構想段階でもご相談ください</h2>
-      <p>
-        「こういうことはできるか？」
-        「古い機器を活かせないか？」
-        「専用機器として製品化できないか？」
-        という段階から対応します。
+      <p class="lead">
+        ハードウェアからクラウドまでを個別の技術としてではなく、
+        一つのシステムとして捉え、現場運用まで見据えた設計・開発を行います。
       </p>
-      <a class="button" href="contact.html">開発について相談する</a>
-    </div>
-  </section>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>ハードウェア開発</h3>
+          <p>
+            回路設計、基板設計、センサー制御、モーター制御、
+            無線通信機器、専用制御機器の開発。
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>組込みソフトウェア開発</h3>
+          <p>
+            Raspberry Pi、ESP32、RP2040などを用いた
+            機器制御、通信制御、表示制御、遠隔更新。
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>PLC・設備制御</h3>
+          <p>
+            PLCラダー・STによる設備制御、既存設備の改修、
+            センサー追加、I/O制御、外部機器との連携。
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>AI活用・業務自動化</h3>
+          <p>
+            生成AI、画像認識、RAGによる社内文書検索、
+            検査システム、自動応答、既存システムとのAI連携。
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Web・スマホ・クラウド</h3>
+          <p>
+            管理画面、業務システム、スマホアプリ、API連携、
+            遠隔監視、クラウド連携、オンラインアップデート。
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+
+      <h2>開発情報の発信</h2>
+
+      <p class="lead">
+        電子回路、組込みソフトウェア、AI活用、画像認識、RAG、
+        Raspberry Pi、ESP32、RFID、IoT、製品開発など、
+        実際の開発で得た知見を順次公開していく予定です。
+      </p>
+
+      <!-- 将来的に blog/index.html へリンク -->
+
+    </section>
+
+    <section class="cta">
+      <div class="section">
+
+        <h2>構想段階でもご相談ください</h2>
+
+        <p>
+          「こういうことは実現できるか」
+          「古い機器や設備を活かせないか」
+          「専用機器やシステムとして製品化できないか」
+          といった段階から対応します。
+        </p>
+
+        <a
+          class="button button-primary"
+          href="contact.html"
+        >
+          開発について相談する
+        </a>
+
+      </div>
+    </section>
+
+  </main>
 
   <footer class="footer">
 
