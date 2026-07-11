@@ -289,12 +289,21 @@ h2 {
 }
 
 .card {
-  margin: 0;
-  padding: 32px;
+  margin: 40px 0;
+  padding: 36px;
 
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
 }
 
 .card h3 {
