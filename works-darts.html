@@ -4,15 +4,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>サポート終了したダーツマシンの再生 | 合同会社アイティラボ</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta
+        name="description"
+        content="メーカーサポートが終了した業務用ダーツマシンに対し、専用制御基板、組込みLinux、ゲームソフトウェア、オンラインアップデート機能を新規開発し、既存筐体を活かした再生を実現した事例です。"
+    >
+
+    <link rel="stylesheet" href="assets/css/style.css?v=20260711">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-69NLYRLEGD"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
         gtag('config', 'G-69NLYRLEGD');
     </script>
@@ -20,164 +30,265 @@
 
 <body>
 
-    <header>
+    <header class="site-header">
         <div class="header-inner">
 
-            <a class="logo" href="index.html">
-                <div class="logo-main">アイティラボ</div>
-                <div class="logo-sub">ハードウェア・組込みシステム開発</div>
+            <a
+                class="site-logo"
+                href="index.html"
+                aria-label="合同会社アイティラボ トップページ"
+            >
+                <img
+                    src="images/logo-header.png?v=20260711"
+                    alt="IT LABO 合同会社アイティラボ"
+                    width="1683"
+                    height="487"
+                >
             </a>
 
-            <nav>
+            <nav class="global-nav" aria-label="メインナビゲーション">
                 <a href="index.html">トップ</a>
-                <a href="works.html">実績紹介</a>
-                <a href="contact.html">お問い合わせ</a>
+                <a href="works.html" aria-current="page">実績紹介</a>
+                <a href="contact.html" class="nav-contact">お問い合わせ</a>
             </nav>
 
         </div>
     </header>
 
-    <main class="section">
+    <main>
 
-        <a href="works.html">← 実績一覧へ戻る</a>
-
-        <h1>サポート終了したダーツマシンの再生</h1>
-
-        <p class="lead">
-            メーカーサポート終了により補修部品の入手が困難となった業務用ダーツマシンに対し、
-            制御システムを独自開発基板へ置き換えることで、既存筐体を活かした再生を実現しました。
-        </p>
-
-        <div class="case-image">
-            <img src="images/darts-board.jpg" alt="ダーツマシン向け制御基板">
-        </div>
-
-        <section class="card">
-            <h2>概要</h2>
-            <p>
-                業務用ダーツマシンの多くは、専用ソフトウェアを搭載したPCやAndroid端末と、
-                盤面判定・LED装飾・コイン投入などを扱う専用I/O回路によって構成されています。
-            </p>
-            <p>
-                本事例では、サポート終了により修理・補修が困難となった既存筐体に対して、
-                Raspberry Pi Compute Module 4を搭載した専用制御基板を新規設計し、
-                制御系を全面的に置き換えることで、再び運用できる状態へ再生しました。
-            </p>
-        </section>
-
-        <section class="card">
-            <h2>課題</h2>
-            <p>
-                ダーツというゲーム自体は大きく変わらない一方で、メーカーによるサポート終了後は
-                補修部品の入手が困難となり、故障した店舗は高額な新台へ入れ替えるか、
-                使えないまま放置するしかない状況にありました。
-            </p>
-            <p>
-                筐体や盤面などの機械部分はまだ使用できるにもかかわらず、
-                電子制御部品の故障によって機器全体が使えなくなる点が大きな課題でした。
-            </p>
-        </section>
-
-        <section class="card">
-            <h2>提案</h2>
-            <p>
-                既存筐体をそのまま活かし、内部の制御システムのみを独自開発基板へ置き換える構成を提案しました。
-                これにより、店舗側は筐体を買い替えることなく、安価にダーツマシンを再稼働できるようになります。
-            </p>
-            <p>
-                当初は故障の多い周辺部品の互換機提供から開始し、段階的に開発範囲を拡大。
-                最終的には、オリジナルのダーツゲームを搭載したメイン制御部まで提供可能な構成としました。
-            </p>
-        </section>
-
-        <section class="card">
-            <h2>開発内容</h2>
+        <section class="section">
 
             <p>
-                制御基板には Raspberry Pi Compute Module 4 を採用し、
-                盤面判定回路、LED装飾制御、コイン投入制御など、
-                ダーツマシンに必要な専用I/O機能を1枚の基板に統合しました。
+                <a
+                    class="button button-secondary"
+                    href="works.html"
+                >
+                    ← 実績一覧へ戻る
+                </a>
             </p>
-            <p>
-                回路設計・基板設計を自社で行い、製造委託先で製造された基板を最終検査したうえで提供。
-                ソフトウェア面では、組込みLinux上で動作する制御ソフトウェアと、
-                店舗利用を想定したオリジナルダーツゲームを開発しました。
+
+            <h1>サポート終了したダーツマシンの再生</h1>
+
+            <p class="lead">
+                メーカーサポート終了により補修部品の入手が困難となった
+                業務用ダーツマシンに対し、制御システムを独自開発基板へ
+                置き換えることで、既存筐体を活かした再生を実現しました。
             </p>
-            <p>
-                また、現地で不具合が発生した場合に迅速に修正できるよう、オンラインアップデート機能も搭載しました。
-            </p>
+
+            <div class="badges">
+                <span class="badge">約300店舗規模</span>
+                <span class="badge">組込みLinux</span>
+                <span class="badge">専用制御基板</span>
+                <span class="badge">オンラインアップデート</span>
+                <span class="badge">量産対応</span>
+            </div>
 
             <div class="case-image">
-                <img src="images/darts-board2.jpg" alt="ダーツマシン向け専用制御基板">
+                <img
+                    src="images/darts-board.jpg"
+                    alt="ダーツマシン向け制御基板"
+                >
             </div>
 
+            <section class="card">
+                <h2>概要</h2>
+
+                <p>
+                    業務用ダーツマシンは、ゲームソフトウェアを搭載した
+                    コンピュータと、盤面判定、LED装飾、コイン投入などを扱う
+                    専用I/O回路によって構成されています。
+                </p>
+
+                <p>
+                    本事例では、サポート終了により修理や補修が困難となった
+                    既存筐体に対して、Raspberry Pi Compute Module 4を搭載した
+                    専用制御基板を新規設計しました。
+                </p>
+
+                <p>
+                    制御系を全面的に置き換えることで、機械部分や筐体を活かしたまま、
+                    再び店舗で運用できる状態へ再生しています。
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>課題</h2>
+
+                <p>
+                    ダーツというゲーム自体は大きく変わらない一方で、
+                    メーカーサポート終了後は補修部品の入手が困難となり、
+                    故障した店舗では高額な新台への入れ替えが必要となっていました。
+                </p>
+
+                <p>
+                    筐体や盤面などの機械部分はまだ使用できるにもかかわらず、
+                    電子制御部品の故障によって機器全体が使用できなくなることが
+                    大きな課題でした。
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>提案</h2>
+
+                <p>
+                    既存筐体をそのまま活かし、内部の制御システムのみを
+                    独自開発基板へ置き換える構成を提案しました。
+                </p>
+
+                <p>
+                    これにより、店舗側は筐体全体を買い替えることなく、
+                    制御系の更新によってダーツマシンを再稼働できます。
+                </p>
+
+                <p>
+                    当初は故障の多い周辺部品の互換機提供から開始し、
+                    現場で得られた知見を反映しながら段階的に開発範囲を拡大しました。
+                    最終的には、オリジナルのダーツゲームを搭載した
+                    メイン制御部まで提供可能な構成としています。
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>開発内容</h2>
+
+                <p>
+                    制御基板にはRaspberry Pi Compute Module 4を採用し、
+                    盤面判定回路、LED装飾制御、コイン投入制御など、
+                    ダーツマシンに必要な専用I/O機能を1枚の基板へ統合しました。
+                </p>
+
+                <p>
+                    回路設計と基板設計を行い、製造委託先で製造された基板を
+                    最終検査したうえで提供しています。
+                </p>
+
+                <p>
+                    ソフトウェア面では、組込みLinux上で動作する制御ソフトウェアと、
+                    店舗利用を想定したオリジナルダーツゲームを開発しました。
+                </p>
+
+                <p>
+                    また、現地で不具合が発生した場合や機能改善が必要となった場合に
+                    迅速に対応できるよう、オンラインアップデート機能も実装しています。
+                </p>
+
+                <div class="case-image">
+                    <img
+                        src="images/darts-board2.jpg"
+                        alt="Raspberry Pi Compute Module 4を搭載したダーツマシン向け専用制御基板"
+                    >
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>成果</h2>
+
+                <p>
+                    本システムは、業務用ダーツマシン向け制御基板として
+                    約3年間継続して提供され、卸先を通じて全国約300店舗規模に
+                    導入されました。
+                </p>
+
+                <p>
+                    店舗側は既存筐体を活かしながら制御系のみを置き換えることで、
+                    サポート終了機器を再び営業利用できる状態にすることができました。
+                </p>
+
+                <div class="stats">
+
+                    <div class="stat">
+                        <strong>約300店舗</strong>
+                        導入規模
+                    </div>
+
+                    <div class="stat">
+                        <strong>約3年</strong>
+                        継続提供
+                    </div>
+
+                    <div class="stat">
+                        <strong>制御系全面置換</strong>
+                        既存筐体を活用
+                    </div>
+
+                    <div class="stat">
+                        <strong>OTA対応</strong>
+                        遠隔アップデート
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>担当範囲</h2>
+
+                <p>
+                    本事例では、単なる基板設計やソフトウェア開発にとどまらず、
+                    既存機器の動作解析から、専用制御基板、組込みソフトウェア、
+                    ゲームソフトウェア、製造後検査、継続的なアップデート対応まで
+                    一貫して担当しました。
+                </p>
+
+                <ul>
+                    <li>既存機器の動作解析</li>
+                    <li>専用制御基板の回路設計・基板設計</li>
+                    <li>Raspberry Pi Compute Module 4を用いた組込みLinux環境の構築</li>
+                    <li>盤面判定、LED装飾、コイン投入などのI/O制御</li>
+                    <li>オリジナルダーツゲームの開発</li>
+                    <li>オンラインアップデート機能の実装</li>
+                    <li>基板製造の委託管理と製造後検査</li>
+                    <li>量産品の継続提供</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>この事例で示せること</h2>
+
+                <p>
+                    本事例は、単にダーツマシンを開発した事例ではありません。
+                    メーカーサポートが終了した業務用機器を解析し、
+                    専用ハードウェアとソフトウェアによって再生・延命した事例です。
+                </p>
+
+                <p>
+                    古い設備を活かしたい、メーカーによる補修ができなくなった
+                    機器を再生したい、市販品では実現できない専用制御システムを
+                    作りたい、といった案件にも応用できます。
+                </p>
+
+                <p>
+                    <a
+                        class="button button-primary"
+                        href="contact.html"
+                    >
+                        同様の開発について相談する
+                    </a>
+                </p>
+            </section>
+
         </section>
 
-        <section class="card">
-            <h2>成果</h2>
-            <p>
-                本システムは、業務用ダーツマシン向け基板提供として約3年間継続して提供され、
-                卸先を通じて全国約500店舗規模に導入されました。
-            </p>
-            <p>
-                店舗側は既存筐体を活かしながら、制御系のみを置き換えることで、
-                サポート終了機器を再び営業利用できる状態にすることができました。
-            </p>
+        <section class="cta">
+            <div class="section">
 
-            <div class="stats">
-                <div class="stat">
-                    <strong>約300店舗</strong>
-                    導入規模
-                </div>
-                <div class="stat">
-                    <strong>約3年</strong>
-                    継続提供
-                </div>
-                <div class="stat">
-                    <strong>制御系全面置換</strong>
-                    既存筐体を活用
-                </div>
-                <div class="stat">
-                    <strong>OTA対応</strong>
-                    遠隔アップデート
-                </div>
+                <h2>既存設備を活かした改修・再生にも対応します</h2>
+
+                <p>
+                    補修部品が入手できない機器や、
+                    メーカーサポートが終了した設備についても、
+                    現在の構成を解析し、再利用できる部分を活かした
+                    現実的な改修方法をご提案します。
+                </p>
+
+                <a
+                    class="button button-primary"
+                    href="contact.html"
+                >
+                    開発について相談する
+                </a>
+
             </div>
-        </section>
-
-        <section class="card">
-            <h2>担当範囲</h2>
-            <p>
-                本事例では、単なる基板設計やソフトウェア開発に留まらず、
-                既存機器の動作解析から、専用制御基板の設計、組込みソフトウェア、
-                ゲームソフトウェア、製造後検査、アップデート対応まで一貫して担当しました。
-            </p>
-
-            <ul>
-                <li>既存機器の動作解析</li>
-                <li>専用制御基板の回路設計・基板設計</li>
-                <li>Raspberry Pi Compute Module 4を用いた組込みLinux環境構築</li>
-                <li>盤面判定・LED装飾・コイン投入などのI/O制御</li>
-                <li>オリジナルダーツゲームの開発</li>
-                <li>オンラインアップデート機能の実装</li>
-                <li>製造委託・継続提供</li>
-            </ul>
-        </section>
-
-        <section class="card">
-            <h2>この事例で示せること</h2>
-            <p>
-                本事例は、単にダーツマシンを開発した事例ではありません。
-                メーカーサポートが終了した業務用機器を解析し、専用ハードウェアとソフトウェアによって
-                再生・延命した事例です。
-            </p>
-            <p>
-                古い設備を活かしたい、メーカー補修ができなくなった機器を再生したい、
-                市販品では実現できない専用制御システムを作りたい、といったご相談にも応用できます。
-            </p>
-
-            <p>
-                <a class="button" href="contact.html">同様の開発について相談する</a>
-            </p>
         </section>
 
     </main>
