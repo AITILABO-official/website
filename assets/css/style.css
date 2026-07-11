@@ -241,6 +241,8 @@ h2 {
 
 .hero-photo {
   position: relative;
+  width: 88%;
+  margin-left: auto;
 }
 
 .hero-photo::before {
