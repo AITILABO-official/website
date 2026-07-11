@@ -4,166 +4,265 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>実績紹介 | 合同会社アイティラボ</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta
+        name="description"
+        content="合同会社アイティラボの開発実績をご紹介します。ハードウェア、組込みソフトウェア、IoT、スマホアプリ、クラウドまで一貫して設計・開発しています。"
+    >
+
+    <link rel="stylesheet" href="assets/css/style.css?v=20260711">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-69NLYRLEGD"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
         gtag('config', 'G-69NLYRLEGD');
     </script>
-
 </head>
 
 <body>
 
-    <header>
+    <header class="site-header">
         <div class="header-inner">
 
-            <a class="logo" href="index.html">
-                <div class="logo-main">アイティラボ</div>
-                <div class="logo-sub">ハードウェア・組込みシステム開発</div>
+            <a
+                class="site-logo"
+                href="index.html"
+                aria-label="合同会社アイティラボ トップページ"
+            >
+                <img
+                    src="images/logo-header.png?v=20260711"
+                    alt="IT LABO 合同会社アイティラボ"
+                    width="1683"
+                    height="487"
+                >
             </a>
 
-            <nav>
+            <nav class="global-nav" aria-label="メインナビゲーション">
                 <a href="index.html">トップ</a>
-                <a href="works.html">実績紹介</a>
-                <a href="contact.html">お問い合わせ</a>
+                <a href="works.html" aria-current="page">実績紹介</a>
+                <a href="contact.html" class="nav-contact">お問い合わせ</a>
             </nav>
 
         </div>
     </header>
 
-    <main class="section">
-        <h1>実績紹介</h1>
-        <p>
-            アイティラボがこれまでに対応してきた開発事例を紹介します。
-        </p>
+    <main>
 
-        <div class="card work-card">
-            <div class="work-image">
-                <img src="images/darts-board.jpg" alt="ダーツマシン向け制御基板">
-            </div>
+        <section class="section">
 
-            <div class="work-content">
-                <h2>サポート終了したダーツマシンの再生</h2>
+            <h1>実績紹介</h1>
 
-                <p>
-                    メーカーサポート終了により補修部品が入手できなくなった業務用ダーツマシンに対し、
-                    制御システムを独自開発基板へ置き換え、既存筐体を活かした再生を実現しました。
-                </p>
+            <p class="lead">
+                合同会社アイティラボがこれまでに対応してきた開発事例をご紹介します。
+                ハードウェア、組込みソフトウェア、スマホアプリ、クラウドまで、
+                システム全体を見据えた設計・開発を行っています。
+            </p>
 
-                <p>
-                    Raspberry Pi Compute Module 4を採用した専用制御基板を開発し、
-                    回路設計からソフトウェア開発、製造・検査まで一貫して対応しました。
-                </p>
+            <div class="card work-card">
 
-                <div class="badges">
-                    <span class="badge">約300店舗規模</span>
-                    <span class="badge">組込みLinux</span>
-                    <span class="badge">制御基板設計</span>
-                    <span class="badge">オンラインアップデート</span>
-                    <span class="badge">量産対応</span>
+                <div class="work-image">
+                    <img
+                        src="images/darts-board.jpg"
+                        alt="ダーツマシン向け制御基板"
+                    >
                 </div>
 
-                <a class="button" href="works-darts.html">詳細を見る →</a>
-            </div>
-        </div>
+                <div class="work-content">
 
-        <div class="card work-card">
-            <div class="work-image">
-                <img src="images/bottle-system.jpg" alt="独自赤外線技術によるボトル管理システム">
-            </div>
+                    <h2>サポート終了したダーツマシンの再生</h2>
 
-            <div class="work-content">
-                <h2>独自赤外線技術によるボトル管理システム</h2>
+                    <p>
+                        メーカーサポート終了により補修部品が入手できなくなった
+                        業務用ダーツマシンに対し、制御システムを独自開発基板へ
+                        置き換え、既存筐体を活かした再生を実現しました。
+                    </p>
 
-                <p>
-                    飲食店におけるキープボトル捜索の課題に対し、
-                    独自開発した赤外線タグ技術を用いて、
-                    低コストかつ高速なボトル捜索システムを開発しました。
-                </p>
+                    <p>
+                        Raspberry Pi Compute Module 4を採用した専用制御基板を開発し、
+                        回路設計からソフトウェア開発、製造、検査まで一貫して対応しました。
+                    </p>
 
-                <p>
-                    ハードウェア（赤外線タグ/タグスキャナー）、スマホアプリ、クラウドシステムまで一貫して開発しています。
-                </p>
+                    <div class="badges">
+                        <span class="badge">約300店舗規模</span>
+                        <span class="badge">組込みLinux</span>
+                        <span class="badge">制御基板設計</span>
+                        <span class="badge">オンラインアップデート</span>
+                        <span class="badge">量産対応</span>
+                    </div>
 
-                <div class="badges">
-                    <span class="badge">独自赤外線タグ</span>
-                    <span class="badge">無線通信基板設計</span>
-                    <span class="badge">スマホアプリ</span>
-                    <span class="badge">クラウド連携</span>
-                    <span class="badge">量産対応</span>
+                    <a
+                        class="button button-secondary"
+                        href="works-darts.html"
+                    >
+                        詳細を見る →
+                    </a>
+
                 </div>
 
-                <a class="button" href="works-bottle.html">詳細を見る →</a>
-            </div>
-        </div>
-
-        <div class="card work-card">
-            <div class="work-image">
-                <img src="images/race-impact-sensor.jpg" alt="レースカー向け衝撃検知センサー">
             </div>
 
-            <div class="work-content">
-                <h2>レースカー向け衝撃検知センサーの開発</h2>
+            <div class="card work-card">
 
-                <p>
-                    レース中にクラッシュした車両のドライバーへ、
-                    車両が衝撃を受けたことを警告表示するための専用センサーを開発しました。
-                </p>
-
-                <p>
-                    従来のアナログ式衝撃計器をデジタル的に読み取り、
-                    警告インジケータや事故通知など、後段の情報処理につなげられる構成としました。
-                </p>
-
-                <div class="badges">
-                    <span class="badge">レース車両向け</span>
-                    <span class="badge">衝撃検知</span>
-                    <span class="badge">アナログ計器のデジタル化</span>
-                    <span class="badge">組込みセンサー開発</span>
-                    <span class="badge">約50台納品</span>
+                <div class="work-image">
+                    <img
+                        src="images/bottle-system.jpg"
+                        alt="独自赤外線技術によるボトル管理システム"
+                    >
                 </div>
 
-                <a class="button" href="works-race-impact-sensor.html">詳細を見る →</a>
-            </div>
-        </div>
+                <div class="work-content">
 
-        <div class="card work-card">
-            <div class="work-image">
-                <img src="images/agri-iot-system.jpg" alt="農業設備向け遠隔監視・遠隔制御システム">
-            </div>
+                    <h2>独自赤外線技術によるボトル管理システム</h2>
 
-            <div class="work-content">
-                <h2>農業設備向け遠隔監視・遠隔制御システム</h2>
+                    <p>
+                        飲食店におけるキープボトル捜索の課題に対し、
+                        独自開発した赤外線タグ技術を用いて、
+                        低コストかつ高速なボトル捜索システムを開発しました。
+                    </p>
 
-                <p>
-                    農地や施設の状態を遠隔から確認できるように、
-                    土壌環境、明るさ、人感、タンク水位などを取得するIoTシステムを開発しました。
-                </p>
+                    <p>
+                        赤外線タグとタグスキャナーのハードウェア開発に加え、
+                        スマホアプリ、クラウドシステムまで一貫して開発しています。
+                    </p>
 
-                <p>
-                    センサー情報のクラウド連携に加え、
-                    スマホアプリからポンプを遠隔でON/OFFできる制御機能も実装しました。
-                </p>
+                    <div class="badges">
+                        <span class="badge">独自赤外線タグ</span>
+                        <span class="badge">無線通信基板設計</span>
+                        <span class="badge">スマホアプリ</span>
+                        <span class="badge">クラウド連携</span>
+                        <span class="badge">量産対応</span>
+                    </div>
 
-                <div class="badges">
-                    <span class="badge">農業IoT</span>
-                    <span class="badge">遠隔監視</span>
-                    <span class="badge">ポンプ遠隔制御</span>
-                    <span class="badge">クラウド連携</span>
-                    <span class="badge">5台実証中</span>
+                    <a
+                        class="button button-secondary"
+                        href="works-bottle.html"
+                    >
+                        詳細を見る →
+                    </a>
+
                 </div>
 
-                <a class="button" href="works-agri-iot.html">詳細を見る →</a>
             </div>
-        </div>
+
+            <div class="card work-card">
+
+                <div class="work-image">
+                    <img
+                        src="images/race-impact-sensor.jpg"
+                        alt="レースカー向け衝撃検知センサー"
+                    >
+                </div>
+
+                <div class="work-content">
+
+                    <h2>レースカー向け衝撃検知センサーの開発</h2>
+
+                    <p>
+                        レース中にクラッシュした車両のドライバーへ、
+                        車両が衝撃を受けたことを警告表示するための
+                        専用センサーを開発しました。
+                    </p>
+
+                    <p>
+                        従来のアナログ式衝撃計器をデジタル信号として読み取り、
+                        警告インジケータや事故通知など、
+                        後段の情報処理へ接続できる構成としました。
+                    </p>
+
+                    <div class="badges">
+                        <span class="badge">レース車両向け</span>
+                        <span class="badge">衝撃検知</span>
+                        <span class="badge">アナログ計器のデジタル化</span>
+                        <span class="badge">組込みセンサー開発</span>
+                        <span class="badge">約50台納品</span>
+                    </div>
+
+                    <a
+                        class="button button-secondary"
+                        href="works-race-impact-sensor.html"
+                    >
+                        詳細を見る →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="card work-card">
+
+                <div class="work-image">
+                    <img
+                        src="images/agri-iot-system.jpg"
+                        alt="農業設備向け遠隔監視・遠隔制御システム"
+                    >
+                </div>
+
+                <div class="work-content">
+
+                    <h2>農業設備向け遠隔監視・遠隔制御システム</h2>
+
+                    <p>
+                        農地や施設の状態を遠隔から確認できるように、
+                        土壌環境、明るさ、人感、タンク水位などを取得する
+                        IoTシステムを開発しました。
+                    </p>
+
+                    <p>
+                        センサー情報のクラウド連携に加え、
+                        スマホアプリからポンプを遠隔でON／OFFできる
+                        制御機能も実装しました。
+                    </p>
+
+                    <div class="badges">
+                        <span class="badge">農業IoT</span>
+                        <span class="badge">遠隔監視</span>
+                        <span class="badge">ポンプ遠隔制御</span>
+                        <span class="badge">クラウド連携</span>
+                        <span class="badge">5台実証中</span>
+                    </div>
+
+                    <a
+                        class="button button-secondary"
+                        href="works-agri-iot.html"
+                    >
+                        詳細を見る →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cta">
+            <div class="section">
+
+                <h2>構想段階でもご相談ください</h2>
+
+                <p>
+                    実現方法や仕様が決まっていない段階でも問題ありません。
+                    現在の課題や実現したいことを伺い、
+                    システム全体を見据えた進め方をご提案します。
+                </p>
+
+                <a
+                    class="button button-primary"
+                    href="contact.html"
+                >
+                    開発について相談する
+                </a>
+
+            </div>
+        </section>
 
     </main>
 
